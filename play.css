@@ -244,7 +244,7 @@ marker,.content {
   left: 35%;
   transform: translate(-50%, -50%);
 }
-#click {
+#clickbox {
   display: none;
 }
 .instructions {
