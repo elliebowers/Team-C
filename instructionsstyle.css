@@ -19,12 +19,6 @@ body {
         background-position: 0% 50%;
     }
 }
-h1 {
-    position: center center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-
-}
 .center,.content {
     position: absolute;
     top: 50%;
@@ -56,10 +50,9 @@ h1 {
     text-align: center;
     font-size: 22px;
     line-height: 50px;
-    border-radius: 20px;
+    border-radius: 3px;
     cursor: pointer;
     transition: .5s;
-    box-shadow: 0 5px 15px -1px #00000070;
 }
 .instructions:hover {
     background: #9969a5;
@@ -75,10 +68,9 @@ h1 {
     text-align: center;
     font-size: 22px;
     line-height: 50px;
-    border-radius: 20px;
+    border-radius: 3px;
     cursor: pointer;
     transition: .5s;
-    box-shadow: 0 5px 15px -1px #00000070;
 }
 .map:hover {
     background: #9969a5;
@@ -88,18 +80,17 @@ h1 {
     height: 68px;
     background: #c9a9df;
     overflow: hidden;
-    border-radius: 20px 20px 0 0;
+    border-radius: 3px 3px 0 0;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0);
 }
 .content {
     opacity: 0;
     visibility: hidden;
     width: 400px;
-    height: 300px;
+    height: 350px;
     background: white;
     border: 3px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px -1px #00000070;
+    box-shadow: 0 2px 12px 0 rgba(160, 117, 117, 0);
 }
  #click:checked ~ .content{
     opacity: 1;
@@ -109,12 +100,11 @@ h1 {
 .mapcontent {
     opacity: 0;
     visibility: hidden;
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 350px;
     background: white;
     border: 3px;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px -1px #00000070;
+    box-shadow: 0 2px 12px 0 rgba(160, 117, 117, 0);
 }
  #map:checked ~ .mapcontent{
     opacity: 1;
@@ -154,7 +144,7 @@ p {
     bottom: 12px;
     right: 25px;
     border: 1px solid #c9a9df;
-    border-radius: 20px;
+    border-radius: 3px;
     color: #c9a9df;
     padding: 8px 10px;
     font-size: 18px;
@@ -171,7 +161,7 @@ p {
     bottom: 12px;
     right: 25px;
     border: 1px solid #c9a9df;
-    border-radius: 20px;
+    border-radius: 3px;
     color: #c9a9df;
     padding: 8px 10px;
     font-size: 18px;
