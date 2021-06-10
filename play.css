@@ -1,7 +1,13 @@
+html{
+  min-height: 100%;
+  min-width: 100%;
+}
 body{
-  background-image: url(https://cdn.discordapp.com/attachments/852192800426557464/852577092402937916/pirate-treasure-map-picture-id611868178.png);
-  background-position: auto;
-  background-size: 100%;
-  backface-visibility: visible;
-
+  background-image: url(https://teachyourkidscode.com/wp-content/uploads/2021/02/Treasure-Map-Coding-Activity-2048x1583.jpg);
+  background-position: center center;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
