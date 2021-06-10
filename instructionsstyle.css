@@ -12,7 +12,18 @@ body {
     transform: translate(-50%, -50%); 
 }
 
+.center1,.mapcontent { 
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%); 
+}
+
 #click { 
+    display: none;
+}
+
+#map { 
     display: none;
 }
 .instructions { 
@@ -33,6 +44,24 @@ body {
     background: #9969a5;
 
 }
+.map { 
+    display: block;
+    width: 160px;
+    height: 50px;
+    background: #c9a9df;
+    border: 1px solid #9969a5;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    line-height: 50px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .5s;
+}
+.map:hover { 
+    background: #9969a5;
+
+}
 .header { 
     height: 68px;
     background: #c9a9df;
@@ -50,6 +79,20 @@ body {
     box-shadow: 0 2px 12px 0 rgba(160, 117, 117, 0);
 }
  #click:checked ~ .content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.mapcontent { 
+    opacity: 0;
+    visibility: hidden;
+    width: 400px;
+    height: 350px;
+    background: white;
+    border: 3px;
+    box-shadow: 0 2px 12px 0 rgba(160, 117, 117, 0);
+}
+ #map:checked ~ .mapcontent{
     opacity: 1;
     visibility: visible;
 }
@@ -94,6 +137,23 @@ p {
     cursor: pointer;
 }
 .close-btn:hover { 
+    background: #c9a9df;
+    color: white;
+    transition: .5s
+}
+
+.mapclose-btn { 
+    position: absolute;
+    bottom: 12px;
+    right: 25px;
+    border: 1px solid #c9a9df;
+    border-radius: 3px;
+    color: #c9a9df;
+    padding: 8px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.mapclose-btn:hover { 
     background: #c9a9df;
     color: white;
     transition: .5s
