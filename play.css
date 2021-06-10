@@ -21,8 +21,8 @@ body{
   height: 40px;
   background: #521802;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 18%;
+  top: 35%;
   margin: -2.2em 0 0 -1.3em;
   -webkit-box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
   -moz-box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
@@ -46,8 +46,8 @@ body{
 }
 .beacon {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  left: 18%;
   height: 3em;
   width: 3em;
   border-radius: 50%;
@@ -80,7 +80,142 @@ body{
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
+.marker2 {
+  transform: perspective(40px) rotateX(20deg) rotateZ(-45deg);
+  transform-origin: 50% 50%;
+  border-radius: 50% 50% 50% 0;
+  padding: 0 3px 3px 0;
+  width: 40px;
+  height: 40px;
+  background: #521802;
+  position: absolute;
+  left: 40%;
+  top: 70%;
+  margin: -2.2em 0 0 -1.3em;
+  -webkit-box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
+  -moz-box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
+  box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
+}
 
+.marker2:after {
+  content: '';
+  width: 1em;
+  height: 1em;
+  margin: 1em 0 0 .7em;
+  background: #ffffff;
+  position: absolute;
+  border-radius: 50%;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  -moz-box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
+  -webkit-box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
+  box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
+}
+.beacon2 {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1
+}
+
+.beacon2:before,
+.beacon2:after {
+  position: absolute;
+  content: "";
+  height: 3em;
+  width: 3em;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #521802;
+  -webkit-animation: active 2s infinite linear;
+  -moz-animation: active 2s infinite linear;
+  animation: active 2s infinite linear;
+}
+
+.beacon2:after {
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.marker3 {
+  transform: perspective(40px) rotateX(20deg) rotateZ(-45deg);
+  transform-origin: 50% 50%;
+  border-radius: 50% 50% 50% 0;
+  padding: 0 3px 3px 0;
+  width: 40px;
+  height: 40px;
+  background: #521802;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  margin: -2.2em 0 0 -1.3em;
+  -webkit-box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
+  -moz-box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
+  box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
+}
+
+.marker3:after {
+  content: '';
+  width: 1em;
+  height: 1em;
+  margin: 1em 0 0 .7em;
+  background: #ffffff;
+  position: absolute;
+  border-radius: 50%;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  -moz-box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
+  -webkit-box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
+  box-shadow: inset -2px 2px 4px hsla(0, 0, 0, .5);
+}
+.beacon3 {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1
+}
+
+.beacon3:before,
+.beacon3:after {
+  position: absolute;
+  content: "";
+  height: 3em;
+  width: 3em;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #521802;
+  -webkit-animation: active 2s infinite linear;
+  -moz-animation: active 2s infinite linear;
+  animation: active 2s infinite linear;
+}
+
+.beacon3:after {
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
 @-webkit-keyframes active {
   0% {
     -webkit-transform: scale(.1);
