@@ -8,7 +8,7 @@ body {
     background-color: aliceblue;
 }
 
-/*div.container {
+div.container {
     perspective: 320px;
 }
 
@@ -25,5 +25,4 @@ button {
     outline: none;
     cursor: pointer;
     transition: linear;
-}*/
-
+}
