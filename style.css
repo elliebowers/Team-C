@@ -1,0 +1,29 @@
+body {
+    padding: auto;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+/*div.container {
+    perspective: 320px;
+}
+
+button {
+    display: block;
+    margin: 40px 0;
+    width: 240px;
+    height: 80px;
+    border: none;
+    background-color: darkgoldenrod;
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    transition: linear;
+}*/
+
