@@ -13,7 +13,7 @@ body{
 }
 
 .marker {
-  /*transform: perspective(40px) rotateX(20deg) rotateZ(-45deg);*/
+  transform: perspective(40px) rotateX(20deg) rotateZ(-45deg);
   transform-origin: 50% 50%;
   border-radius: 50% 50% 50% 0;
   padding: 3px 3px 3px 3px;
@@ -27,6 +27,7 @@ body{
   -webkit-box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
   -moz-box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
   box-shadow: -1px 1px 4px rgba(0, 0, 0, .5);
+  cursor: pointer;
 }
 
 .marker:after {
@@ -238,96 +239,89 @@ body{
     opacity: 0;
   }
 }
-marker,.content {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -50%);
+
+.marker1, .puzzlecontent1 {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 2x 12px 0 rgba(0,0,0,.4);
+  background: white;
+  text-align: center; }
+
+
+.click-me:hover {
+  background: black; }
+
+
+.puzzlecontent1 {
+  display: none 
 }
-#clickbox {
-  display: none;
-}
-.instructions {
-  display: block;
-  width: 1px;
-  height: 1px;
-  background: #c9a9df;
-  border: 1px solid #9969a5;
-  color: white;
-  text-align: center;
-  font-size: 22px;
-  line-height: 50px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: .5s;
-  box-shadow: 0 5px 15px -1px #00000070;
-}
-.instructions:hover {
-  background: #9969a5;
+
+.header {
+  height: 50px;
+  background: #521802;
+  overflow: hidden;
+  border-radius: 3px 3px 0 0;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
 
 }
-.header {
-  height: 68px;
-  background: #c9a9df;
-  overflow: hidden;
-  border-radius: 20px 20px 0 0;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0);
-}
-.content {
-  opacity: 0;
-  visibility: hidden;
-  width: 400px;
-  height: 300px;
-  background: white;
-  border: 3px;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px -1px #00000070;
-}
-#click:checked ~ .content{
-  opacity: 1;
-  visibility: visible;
-}
-.header h2 {
-  color: white;
-  padding-left: 10px;
-  text-align: center;
-  font-weight: normal;
-}
-.fa-times {
+
+
+.fa-times{
   position: absolute;
   right: 20px;
   top: 20px;
-  color: black;
+  color: #e8f7fc;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
+
 }
-p {
+
+.fa-check {
+  font-size: 50px;
+  color: #521802;
+  margin: 30px 0 0 160px;
+  font-weight: bold;
+  height: 80px;
+  width: 80px; 
+  border: 2 px solid #521802;
+  text-align: center;
+  padding-top: 13px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 30px 0 0 160px;
+
+}
+p{
   padding-top: 10px;
   font-size: 19px;
-  color: black;
+  color: #1a1a1a;
   text-align: center;
+
 }
-.line {
+.line{
   position: absolute;
   bottom: 60px;
   width: 100%;
   height: 1px;
-  background: cornflowerblue;
+  background: silver;
+
 }
-.close-btn {
+.puzzleclose
+{
   position: absolute;
   bottom: 12px;
   right: 25px;
-  border: 1px solid #c9a9df;
-  border-radius: 20px;
-  color: #c9a9df;
-  padding: 8px 10px;
+  border: 1px solid #521802;
+  border-radius: 3px;
+  color: #521802;
+  padding: 8px 10px; 
   font-size: 18px;
   cursor: pointer;
+
 }
-.close-btn:hover {
-  background: #c9a9df;
+.puzzleclose-btn:hover {
+  background: #521802;
   color: white;
-  transition: .5s
+  transition: .5s;
 }
