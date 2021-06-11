@@ -250,6 +250,8 @@ body{
 .marker1, .puzzlecontent {
   width: 200px;
   height: 200px;
+  top: 65%;
+  left: 45%;
   position: relative;
   box-shadow: 0 2x 12px 0 rgba(0,0,0,.4);
   text-align: center;
