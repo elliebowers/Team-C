@@ -240,7 +240,7 @@ body{
   }
 }
 
-.marker1, .puzzlecontent1 {
+.marker1, .puzzlecontent {
   width: 200px;
   height: 200px;
   box-shadow: 0 2x 12px 0 rgba(0,0,0,.4);
@@ -265,6 +265,19 @@ body{
 
 }
 
+.puzzlecontent {
+  opacity: 0;
+  visibility: hidden; 
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 2px 12px 0 rgba (0,0,0,.4)
+}
+#click:checked ~ .puzzlecontent {
+  opacity: 1;
+  visibility:visible;
+}
 
 .fa-times{
   position: absolute;
